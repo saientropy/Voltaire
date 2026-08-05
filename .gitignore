@@ -1,0 +1,12 @@
+.DS_Store
+DerivedData/
+*.xcuserstate
+xcuserdata/
+.env
+.env.*
+Secrets.*
+*.p12
+*.mobileprovision
+Books/
+GeneratedAudio/
+UserData/
