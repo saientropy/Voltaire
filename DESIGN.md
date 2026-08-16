@@ -19,18 +19,18 @@ The hierarchy is:
 - Give text generous margins and line spacing appropriate to sustained reading.
 - Do not place text inside cards.
 - Do not mimic a PDF page viewer.
-- Do not show permanent toolbars, chat panes, promotional content, or decorative AI gradients.
-- A single deliberate tap may reveal controls; they fade away after the action.
+- Do not show permanent toolbar surfaces, chat panes, promotional content, or decorative AI gradients.
+- Quiet theme-matched Back, Ask, and Reading icon buttons may remain at the page edge so essential actions stay handy. They must read as part of the book canvas, not as an app toolbar; one deliberate tap reveals secondary controls in a dismissible sheet.
 
 ## Adjustable reading window
 
 The reader can control how many lines are visible at once. This is a core reading mode, not an accessibility afterthought.
 
-- Offer useful presets initially, including a full-page view.
+- Offer a quiet exact-value line-count control for every value from 3 through 20, plus Full Page.
 - Preserve book-quality typography at every setting.
 - When fewer lines are visible, the remaining space stays calm rather than filling with controls.
 - Changing font, size, width, spacing, or orientation must recalculate the visible reading window without losing the current sentence.
-- The exact interaction and preset values require visual testing on Sai's iPad before they are finalized.
+- The line-count control should not become a persistent toolbar; reveal it on demand and keep unused page space calm.
 
 ## Voice companion
 
