@@ -67,7 +67,7 @@ The initial user is Sai, reading on an iPad and managing development from Macs w
 
 1. Begin narration from the current sentence.
 2. Highlight the currently spoken phrase.
-3. Allow speed, pause, seek, and sleep controls without covering the page.
+3. Choose a saved Relaxed, Natural, or Brisk pace before narration, and pause, resume, or stop without covering the page.
 4. Stop listening and continue reading at the same sentence.
 5. Resume audio after silent reading from the updated sentence.
 
@@ -138,7 +138,7 @@ The package format must be versioned and regenerable. Regenerating derived asset
 
 - The reader understands the primary action within two seconds.
 - Book text dominates the screen in every normal reading state.
-- Controls remain reachable but do not persist visually.
+- Only the quiet Back, Ask, and Reading entry buttons persist visually; all secondary controls remain dismissible and return focus to the book.
 - The interface avoids generic cards, dashboards, badges, AI gradients, and noisy gamification.
 - Every assistant state has a clear exit back to reading.
 - Original and adapted text are never visually ambiguous.
@@ -195,7 +195,7 @@ TBD:
 - Page/line transitions should feel immediate on the target iPad.
 - Reader appearance changes must not visibly jump to another location.
 - Long books must not require loading the entire rendered text into one visible view.
-- Audio highlighting must remain synchronized after pause, seek, speed change, interruption, and relaunch.
+- Audio highlighting must remain synchronized at every supported pace and after pause, resume, interruption, and relaunch.
 - Import errors must identify the failing stage and preserve the original source.
 - Battery, memory, and thermal behavior must be checked on a physical iPad before narration or AI milestones are approved.
 
@@ -212,7 +212,9 @@ Each visible milestone must include:
 
 Factory and Codex must not edit the same branch at the same time. Factory is the default milestone implementer; Codex is the default independent reviewer and visual verifier. Either may switch roles when explicitly agreed.
 
-## 15. MVP acceptance criteria
+## 15. Current local-first candidate acceptance criteria
+
+The approved local-first candidate overrides the original spoken-companion and Language Lens MVP sequencing. Press-and-hold voice interaction and reversible Language Lens transformations remain M5/M6 work rather than acceptance gates for this candidate.
 
 The personal MVP is complete when Sai can:
 
@@ -222,9 +224,9 @@ The personal MVP is complete when Sai can:
 4. Close and reopen Voltaire at the same sentence.
 5. Start narration from that sentence and see restrained phrase highlighting.
 6. Stop narration and continue reading from the same location.
-7. Hold to ask a contextual spoken question and receive a concise spoken answer.
-8. Apply a reversible Language Lens to the current sentence or paragraph.
-9. Recover the original text instantly.
+7. Ask for concise contextual text help from the current passage and receive an on-device answer when Apple's model is available, or a clear actionable unavailable state otherwise.
+8. Dismiss contextual help without changing the canonical reading or narration position.
+9. Keep imported source files unchanged through processing and relaunch.
 10. Use the core experience in portrait and landscape on the physical iPad.
 
 ## 16. Risks

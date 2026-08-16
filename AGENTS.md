@@ -6,8 +6,9 @@ Voltaire is a native, iPad-first reading app for imported books. It should feel 
 
 ## Current phase
 
-- Foundation and planning only.
-- No application has been scaffolded yet.
+- The current approved objective is a coherent local-first reader candidate: polished library and reader, DRM-free EPUB and clean text PDF import, real EPUB Contents navigation, local persistence, persistent reader appearance controls for text size, line spacing, and margins, Premium/Enhanced Apple narration with saved Relaxed, Natural, and Brisk pace choices, synchronized phrase highlighting, and a bounded on-device Ask sheet.
+- The complete iPad (A16) simulator suite passed 134/134 with 0 failed and 0 skipped on 2026-08-16. Generated results and visual evidence are retained locally under ignored `artifacts/`, not in public Git history.
+- Local physical-iPad runs passed fresh EPUB/PDF import and reopen, Premium narration selection, moving phrase highlighting, stable pause, resume/stop, progress relaunch, portrait/landscape, and the Apple Intelligence-off Ask fallback. Subjective voice naturalness remains Sai's acceptance decision. See `HANDOFF.md` for the bounded current status.
 - Do not implement more than one approved milestone at a time.
 - Before editing, read `DESIGN.md`, `docs/PRD.md`, `docs/APP-MAP.md`, and `docs/MILESTONES.md`.
 - When Factory is in Spec Mode, inspect and plan only. Do not edit until Sai explicitly approves the plan.
@@ -16,13 +17,25 @@ Voltaire is a native, iPad-first reading app for imported books. It should feel 
 
 - Native iPadOS application.
 - Swift and SwiftUI.
-- Local-first book storage, preferences, progress, and annotations.
+- Local-first book storage, preferences, and progress. Bookmarks and annotations are not implemented yet.
 - Originals remain immutable; derived assets and user state are separate.
-- Cloud AI and narration providers are TBD. Do not choose or integrate one without approval.
+- The contextual assistant uses Apple's on-device Foundation Models when available. Narration remains local through Apple speech voices. Do not add a cloud provider without approval.
 
 ## Commands
 
-There are no verified install, build, test, lint, or run commands yet. After the Xcode project is scaffolded, replace this paragraph with exact commands that have been run successfully. Never invent a command or document one as verified without running it.
+The native SwiftUI reader shell exists. Verified local commands:
+
+```sh
+xcodebuild -project Voltaire.xcodeproj -list
+xcodebuild -project Voltaire.xcodeproj -scheme Voltaire -sdk iphonesimulator -configuration Debug -destination 'platform=iOS Simulator,id=D27D8620-F123-4944-945F-09B002DD088C' -derivedDataPath /tmp/VoltaireDerived CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Voltaire.xcodeproj -scheme Voltaire -sdk iphonesimulator -configuration Debug -destination 'platform=iOS Simulator,id=D27D8620-F123-4944-945F-09B002DD088C' -derivedDataPath /tmp/VoltaireDerived CODE_SIGNING_ALLOWED=NO test
+xcodebuild -project Voltaire.xcodeproj -scheme Voltaire -sdk iphoneos -configuration Debug -destination 'generic/platform=iOS' -derivedDataPath /tmp/VoltaireDeviceDerived CODE_SIGNING_ALLOWED=NO ARCHS=arm64 build
+swiftc -typecheck -module-name Voltaire $(find Voltaire -name '*.swift' -print | sort)
+```
+
+Verified status: the saved local Automator workflow reported `SIMULATOR VERIFIED` with 134 passed, 0 failed, and 0 skipped. Local physical checks passed fresh EPUB/PDF import and persistence plus narration phrase/pause/resume/stop/rotation behavior. The physical iPad proved Ask's Apple Intelligence-off fallback, not a real model answer. Detailed binary and device evidence is deliberately ignored by Git.
+
+The earlier robotic Default-voice build and all older signed candidates are rejected and must never be installed. Any new source revision requires a fresh build and verification before physical installation. Do not claim active Premium/Enhanced simulator audio.
 
 ## Product guardrails
 
@@ -40,7 +53,7 @@ There are no verified install, build, test, lint, or run commands yet. After the
 - Follow `DESIGN.md`; do not substitute generic AI styling.
 - Support iPad portrait and landscape from the first visible milestone.
 - Treat Dynamic Type, VoiceOver, Reduce Motion, contrast, comfortable touch targets, and hardware keyboard behavior as first-class requirements.
-- Controls should disappear during reading and remain discoverable on demand.
+- Secondary controls should disappear during reading; one quiet theme-matched entry point may remain available on demand.
 
 ## Required workflow
 
@@ -62,7 +75,7 @@ There are no verified install, build, test, lint, or run commands yet. After the
 
 ## Secrets and privacy
 
-- Never commit credentials, signing material, book files, generated narration, or private annotations.
+- Never commit credentials, signing material, private/imported book files, generated narration, or private annotations. The verified public-domain sample and test fixture are intentional exceptions.
 - Use local ignored configuration or Apple-supported secret storage when integrations are later approved.
 - Send only the minimum selected passage to a cloud AI service; never upload a full book by default.
 

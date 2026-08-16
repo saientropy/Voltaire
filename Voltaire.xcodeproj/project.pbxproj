@@ -1,0 +1,138 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		100000000000000000000101 /* VoltaireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000201 /* VoltaireApp.swift */; };
+		100000000000000000000102 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000202 /* AppModel.swift */; };
+		100000000000000000000103 /* SampleChapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000203 /* SampleChapter.swift */; };
+		100000000000000000000104 /* SampleChapterContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000204 /* SampleChapterContent.swift */; };
+		100000000000000000000105 /* ReaderDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000205 /* ReaderDocument.swift */; };
+		100000000000000000000106 /* ReaderPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000206 /* ReaderPosition.swift */; };
+		100000000000000000000107 /* ReaderWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000207 /* ReaderWindow.swift */; };
+		100000000000000000000108 /* SentenceLayoutEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000208 /* SentenceLayoutEngine.swift */; };
+		100000000000000000000109 /* ReaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000209 /* ReaderModel.swift */; };
+		100000000000000000000110 /* ReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000210 /* ReaderView.swift */; };
+		100000000000000000000111 /* ReaderControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000211 /* ReaderControlsView.swift */; };
+		100000000000000000000113 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000213 /* LibraryView.swift */; };
+		100000000000000000000114 /* ReadingTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000214 /* ReadingTokens.swift */; };
+		100000000000000000000118 /* SpeechEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000218 /* SpeechEngine.swift */; };
+		100000000000000000000119 /* AVSpeechEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000219 /* AVSpeechEngine.swift */; };
+		100000000000000000000120 /* NarrationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000220 /* NarrationModel.swift */; };
+		100000000000000000000122 /* ReaderChromeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000221 /* ReaderChromeView.swift */; };
+		100000000000000000000123 /* LibraryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000222 /* LibraryRepository.swift */; };
+		100000000000000000000124 /* BookImportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000223 /* BookImportCoordinator.swift */; };
+		100000000000000000000125 /* EPUBBookParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000224 /* EPUBBookParser.swift */; };
+		100000000000000000000127 /* AssistantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000225 /* AssistantService.swift */; };
+		100000000000000000000128 /* OnDeviceAssistantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000226 /* OnDeviceAssistantService.swift */; };
+		100000000000000000000129 /* AskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000227 /* AskModel.swift */; };
+		100000000000000000000130 /* AskSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000228 /* AskSheetView.swift */; };
+		100000000000000000000117 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000215 /* Assets.xcassets */; };
+		100000000000000000000115 /* SentenceLayoutEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000301 /* SentenceLayoutEngineTests.swift */; };
+		100000000000000000000116 /* ReaderPositionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000302 /* ReaderPositionTests.swift */; };
+		100000000000000000000121 /* NarrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000303 /* NarrationTests.swift */; };
+		100000000000000000000126 /* ImportTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000304 /* ImportTests.swift */; };
+		100000000000000000000131 /* AssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100000000000000000000305 /* AssistantTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100000000000000000000001 /* Voltaire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Voltaire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000002 /* VoltaireTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoltaireTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		100000000000000000000201 /* VoltaireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoltaireApp.swift; sourceTree = "<group>"; };
+		100000000000000000000202 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		100000000000000000000203 /* SampleChapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleChapter.swift; sourceTree = "<group>"; };
+		100000000000000000000204 /* SampleChapterContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleChapterContent.swift; sourceTree = "<group>"; };
+		100000000000000000000205 /* ReaderDocument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderDocument.swift; sourceTree = "<group>"; };
+		100000000000000000000206 /* ReaderPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderPosition.swift; sourceTree = "<group>"; };
+		100000000000000000000207 /* ReaderWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderWindow.swift; sourceTree = "<group>"; };
+		100000000000000000000208 /* SentenceLayoutEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceLayoutEngine.swift; sourceTree = "<group>"; };
+		100000000000000000000209 /* ReaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderModel.swift; sourceTree = "<group>"; };
+		100000000000000000000210 /* ReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderView.swift; sourceTree = "<group>"; };
+		100000000000000000000211 /* ReaderControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderControlsView.swift; sourceTree = "<group>"; };
+		100000000000000000000213 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		100000000000000000000214 /* ReadingTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingTokens.swift; sourceTree = "<group>"; };
+		100000000000000000000218 /* SpeechEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechEngine.swift; sourceTree = "<group>"; };
+		100000000000000000000219 /* AVSpeechEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVSpeechEngine.swift; sourceTree = "<group>"; };
+		100000000000000000000220 /* NarrationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrationModel.swift; sourceTree = "<group>"; };
+		100000000000000000000221 /* ReaderChromeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderChromeView.swift; sourceTree = "<group>"; };
+		100000000000000000000222 /* LibraryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryRepository.swift; sourceTree = "<group>"; };
+		100000000000000000000223 /* BookImportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookImportCoordinator.swift; sourceTree = "<group>"; };
+		100000000000000000000224 /* EPUBBookParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPUBBookParser.swift; sourceTree = "<group>"; };
+		100000000000000000000225 /* AssistantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantService.swift; sourceTree = "<group>"; };
+		100000000000000000000226 /* OnDeviceAssistantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnDeviceAssistantService.swift; sourceTree = "<group>"; };
+		100000000000000000000227 /* AskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskModel.swift; sourceTree = "<group>"; };
+		100000000000000000000228 /* AskSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AskSheetView.swift; sourceTree = "<group>"; };
+		100000000000000000000215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		100000000000000000000301 /* SentenceLayoutEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentenceLayoutEngineTests.swift; sourceTree = "<group>"; };
+		100000000000000000000302 /* ReaderPositionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderPositionTests.swift; sourceTree = "<group>"; };
+		100000000000000000000303 /* NarrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NarrationTests.swift; sourceTree = "<group>"; };
+		100000000000000000000304 /* ImportTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportTests.swift; sourceTree = "<group>"; };
+		100000000000000000000305 /* AssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssistantTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		100000000000000000001001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		100000000000000000001002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		100000000000000000003001 = {isa = PBXGroup; children = (100000000000000000003002, 100000000000000000003017, 100000000000000000003019, ); sourceTree = "<group>"; };
+		100000000000000000003002 /* Products */ = {isa = PBXGroup; children = (100000000000000000000001, 100000000000000000000002, ); name = Products; sourceTree = "<group>"; };
+		100000000000000000003010 /* App */ = {isa = PBXGroup; children = (100000000000000000000201, 100000000000000000000202, ); path = App; sourceTree = "<group>"; };
+		100000000000000000003011 /* Content */ = {isa = PBXGroup; children = (100000000000000000000203, 100000000000000000000204, ); path = Content; sourceTree = "<group>"; };
+		100000000000000000003012 /* Reader */ = {isa = PBXGroup; children = (100000000000000000000205, 100000000000000000000206, 100000000000000000000207, 100000000000000000000208, 100000000000000000000209, 100000000000000000000210, 100000000000000000000211, 100000000000000000000218, 100000000000000000000219, 100000000000000000000220, 100000000000000000000221, ); path = Reader; sourceTree = "<group>"; };
+		100000000000000000003013 /* Library */ = {isa = PBXGroup; children = (100000000000000000000213, 100000000000000000000222, 100000000000000000000223, 100000000000000000000224, ); path = Library; sourceTree = "<group>"; };
+		100000000000000000003014 /* DesignSystem */ = {isa = PBXGroup; children = (100000000000000000000214, ); path = DesignSystem; sourceTree = "<group>"; };
+		100000000000000000003015 /* Assistant */ = {isa = PBXGroup; children = (100000000000000000000225, 100000000000000000000226, 100000000000000000000227, 100000000000000000000228, ); path = Assistant; sourceTree = "<group>"; };
+		100000000000000000003017 /* Voltaire */ = {isa = PBXGroup; children = (100000000000000000003010, 100000000000000000003011, 100000000000000000003012, 100000000000000000003013, 100000000000000000003014, 100000000000000000003015, 100000000000000000000215, ); path = Voltaire; sourceTree = "<group>"; };
+		100000000000000000003019 /* VoltaireTests */ = {isa = PBXGroup; children = (100000000000000000000301, 100000000000000000000302, 100000000000000000000303, 100000000000000000000304, 100000000000000000000305, ); path = VoltaireTests; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000004001 /* Voltaire */ = {isa = PBXNativeTarget; buildConfigurationList = 100000000000000000006001; buildPhases = (100000000000000000001003, 100000000000000000001001, 100000000000000000001004, ); buildRules = (); dependencies = (); name = Voltaire; productName = Voltaire; productReference = 100000000000000000000001; productType = "com.apple.product-type.application"; };
+		100000000000000000004002 /* VoltaireTests */ = {isa = PBXNativeTarget; buildConfigurationList = 100000000000000000006002; buildPhases = (100000000000000000001005, 100000000000000000001002, 100000000000000000001006, ); buildRules = (); dependencies = (100000000000000000005001, ); name = VoltaireTests; productName = VoltaireTests; productReference = 100000000000000000000002; productType = "com.apple.product-type.bundle.unit-test"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000005101 /* Project object */ = {isa = PBXProject; attributes = {BuildIndependentTargetsInParallel = 1; LastSwiftUpdateCheck = 2600; LastUpgradeCheck = 2600; TargetAttributes = {100000000000000000004001 = {CreatedOnToolsVersion = 26.0;}; 100000000000000000004002 = {CreatedOnToolsVersion = 26.0; TestTargetID = 100000000000000000004001;};}; }; buildConfigurationList = 100000000000000000006101; compatibilityVersion = "Xcode 16.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, ); mainGroup = 100000000000000000003001; packageReferences = (); productRefGroup = 100000000000000000003002; projectDirPath = ""; projectRoot = ""; targets = (100000000000000000004001, 100000000000000000004002, ); };
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		100000000000000000001004 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (100000000000000000000117, ); runOnlyForDeploymentPostprocessing = 0; };
+		100000000000000000001006 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000001003 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (100000000000000000000101, 100000000000000000000102, 100000000000000000000103, 100000000000000000000104, 100000000000000000000105, 100000000000000000000106, 100000000000000000000107, 100000000000000000000108, 100000000000000000000109, 100000000000000000000110, 100000000000000000000111, 100000000000000000000113, 100000000000000000000114, 100000000000000000000118, 100000000000000000000119, 100000000000000000000120, 100000000000000000000122, 100000000000000000000123, 100000000000000000000124, 100000000000000000000125, 100000000000000000000127, 100000000000000000000128, 100000000000000000000129, 100000000000000000000130, ); runOnlyForDeploymentPostprocessing = 0; };
+		100000000000000000001005 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (100000000000000000000115, 100000000000000000000116, 100000000000000000000121, 100000000000000000000126, 100000000000000000000131, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		100000000000000000005001 = {isa = PBXTargetDependency; target = 100000000000000000004001; targetProxy = 100000000000000000005002; };
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		100000000000000000005002 = {isa = PBXContainerItemProxy; containerPortal = 100000000000000000005101; proxyType = 1; remoteGlobalIDString = 100000000000000000004001; remoteInfo = Voltaire; };
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		100000000000000000007001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CLANG_ENABLE_MODULES = YES; CURRENT_PROJECT_VERSION = 1; ENABLE_TESTABILITY = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = Voltaire/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = Voltaire; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books"; INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"; IPHONEOS_DEPLOYMENT_TARGET = 18.0; MARKETING_VERSION = 0.1; PRODUCT_BUNDLE_IDENTIFIER = com.voltaire.reader; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "2"; CODE_SIGN_STYLE = Automatic; }; name = Debug; };
+		100000000000000000007002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon; CLANG_ENABLE_MODULES = YES; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_FILE = Voltaire/Info.plist; INFOPLIST_KEY_CFBundleDisplayName = Voltaire; INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books"; INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"; IPHONEOS_DEPLOYMENT_TARGET = 18.0; MARKETING_VERSION = 0.1; PRODUCT_BUNDLE_IDENTIFIER = com.voltaire.reader; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = "2"; CODE_SIGN_STYLE = Automatic; }; name = Release; };
+		100000000000000000007003 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 18.0; PRODUCT_BUNDLE_IDENTIFIER = com.voltaire.reader.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltaire.app/Voltaire"; }; name = Debug; };
+		100000000000000000007004 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGNING_ALLOWED = NO; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 18.0; PRODUCT_BUNDLE_IDENTIFIER = com.voltaire.reader.tests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SWIFT_VERSION = 6.0; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voltaire.app/Voltaire"; }; name = Release; };
+		100000000000000000007005 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 6.0; }; name = Debug; };
+		100000000000000000007006 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; SWIFT_VERSION = 6.0; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000006001 /* Build configuration list for PBXNativeTarget "Voltaire" */ = {isa = XCConfigurationList; buildConfigurations = (100000000000000000007001, 100000000000000000007002, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		100000000000000000006002 /* Build configuration list for PBXNativeTarget "VoltaireTests" */ = {isa = XCConfigurationList; buildConfigurations = (100000000000000000007003, 100000000000000000007004, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		100000000000000000006101 /* Build configuration list for PBXProject "Voltaire" */ = {isa = XCConfigurationList; buildConfigurations = (100000000000000000007005, 100000000000000000007006, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000005101 /* Project object */;
+}
